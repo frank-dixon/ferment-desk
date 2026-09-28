@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth antialiased;
+  }
+  body {
+    @apply m-0 min-h-screen bg-void text-ink font-sans text-[15px] leading-relaxed;
+  }
+  ::selection {
+    @apply bg-sea/30 text-ink;
+  }
+}
+
+@layer components {
+  .desk-card {
+    @apply rounded-desk border border-rule bg-void-card shadow-card;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full border border-rule px-3 py-1 text-xs font-medium tracking-wide transition;
+  }
+  .chip-active {
+    @apply border-sea/40 bg-sea-mist text-sea-soft;
+  }
+  .chip-idle {
+    @apply text-ink-muted hover:border-rule hover:bg-void-elev hover:text-ink;
+  }
+}

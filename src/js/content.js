@@ -1,0 +1,213 @@
+/**
+ * Ferment Desk — pathway content for bread, kraut, yogurt, coffee.
+ * Citations use published DOIs/URLs only; do not invent references.
+ */
+window.FERMENT_CONTENT = {
+  bread: {
+    id: 'bread',
+    label: 'Bread',
+    tagline: 'Sourdough and commercial yeast pathways',
+    organisms: [
+      {
+        name: 'Saccharomyces cerevisiae',
+        role: 'Primary leavening yeast; ferments maltose and other sugars to CO₂ and ethanol.',
+      },
+      {
+        name: 'Fructilactobacillus sanfranciscensis',
+        role: 'Key sourdough LAB; acidifies dough and shapes flavor with acetic and lactic acids.',
+      },
+      {
+        name: 'Other LAB (e.g. Lactiplantibacillus plantarum)',
+        role: 'Often co-dominate mature starters; contribute acidity, aroma, and dough rheology.',
+      },
+    ],
+    stages: [
+      {
+        title: 'Preferment / starter',
+        body: 'A preferment (levain, poolish, or biga) multiplies yeast and lactic acid bacteria before they meet the bulk dough. In sourdough, repeated refreshments select acid-tolerant yeasts and LAB such as F. sanfranciscensis that thrive in the flour–water ecosystem.',
+      },
+      {
+        title: 'Bulk fermentation',
+        body: 'After mixing, yeast produces gas while enzymes and acids remodel gluten. Temperature and time govern how far gas production and acidification proceed before shaping.',
+      },
+      {
+        title: 'Proof',
+        body: 'The shaped loaf ferments once more so gas expands within a set gluten network. Overproofing collapses structure; underproofing leaves a tight crumb and muted flavor.',
+      },
+    ],
+    takeaways: [
+      'Commercial yeast bread leans on S. cerevisiae for rapid gas; sourdough pairs yeast with LAB for acidity and shelf life.',
+      'Preferments build cell density and flavor precursors before the final dough.',
+      'Bulk and proof are the same microbial metabolism at different dough geometries—control time and temperature, not just clock hours.',
+    ],
+    citations: [
+      {
+        text: 'De Vuyst L, Neysens P. The sourdough microflora: biodiversity and metabolic interactions. Trends Food Sci Technol. 2005;16(1–3):43–56.',
+        url: 'https://doi.org/10.1016/j.tifs.2004.02.012',
+      },
+      {
+        text: 'Gobbetti M, Minervini F, Pontonio E, Di Cagno R, De Angelis M. Drivers for the establishment and composition of the sourdough lactic acid bacteria biota. Int J Food Microbiol. 2016;239:3–18.',
+        url: 'https://doi.org/10.1016/j.ijfoodmicro.2016.05.022',
+      },
+      {
+        text: 'Gänzle MG, Zheng J. Lifestyles of sourdough lactobacilli – Do they matter for microbial ecology and bread quality? Int J Food Microbiol. 2019;302:15–23.',
+        url: 'https://doi.org/10.1016/j.ijfoodmicro.2018.08.019',
+      },
+    ],
+  },
+
+  kraut: {
+    id: 'kraut',
+    label: 'Kraut',
+    tagline: 'Spontaneous cabbage brine succession',
+    organisms: [
+      {
+        name: 'Leuconostoc spp. (early)',
+        role: 'Heterofermentative starters that lower pH quickly and produce CO₂ in the brine.',
+      },
+      {
+        name: 'Lactiplantibacillus / Latilactobacillus spp. (later)',
+        role: 'Acid-tolerant homofermentative LAB that dominate as pH falls and finish the ferment.',
+      },
+      {
+        name: 'Epiphytic microbiota',
+        role: 'Native cabbage surface microbes seed the succession when salt and anaerobiosis select LAB.',
+      },
+    ],
+    stages: [
+      {
+        title: 'Salt and pack',
+        body: 'Shredded cabbage mixed with salt draws brine by osmosis. Packing under the brine excludes air so aerobic spoilage molds and yeasts are suppressed while LAB can grow.',
+      },
+      {
+        title: 'Early succession (Leuconostoc)',
+        body: 'Leuconostoc and related heterofermenters bloom first, producing lactic acid, acetic acid, and CO₂. The brine cloudiness and mild fizz are normal signs of this phase.',
+      },
+      {
+        title: 'Late succession (Lactobacillus-group)',
+        body: 'As acidity rises, more acid-tolerant Lactobacillus-group species take over, deepen the sour profile, and stabilize the product for storage when refrigerated or properly canned.',
+      },
+    ],
+    takeaways: [
+      'Keep cabbage fully submerged—oxygen invites soft spoilage on the surface.',
+      'Salt concentration and temperature steer how fast Leuconostoc yields to later LAB.',
+      'Spontaneous kraut is a classic ecological succession, not a single-organism process.',
+    ],
+    citations: [
+      {
+        text: 'Holzapfel WH. Appropriate starter culture technologies for small-scale fermentation in developing countries. Int J Food Microbiol. 2002;75(3):197–212.',
+        url: 'https://doi.org/10.1016/S0168-1605(01)00676-4',
+      },
+      {
+        text: 'Plengvidhya V, Breidt F Jr, Lu Z, Fleming HP. DNA fingerprinting of lactic acid bacteria in sauerkraut fermentations. Appl Environ Microbiol. 2007;73(23):7697–7702.',
+        url: 'https://doi.org/10.1128/AEM.01327-07',
+      },
+      {
+        text: 'Zabat MA, Sano WH, Cabral DJ, Wurster JI, Belenky P. Microbial community analysis of sauerkraut fermentation reveals a stable and rapidly established community. Foods. 2018;7(5):77.',
+        url: 'https://doi.org/10.3390/foods7050077',
+      },
+    ],
+  },
+
+  yogurt: {
+    id: 'yogurt',
+    label: 'Yogurt',
+    tagline: 'Defined thermophilic starter symbiosis',
+    organisms: [
+      {
+        name: 'Streptococcus thermophilus',
+        role: 'Fast early acidifier; produces formic acid and CO₂ that stimulate its lactobacillus partner.',
+      },
+      {
+        name: 'Lactobacillus delbrueckii subsp. bulgaricus',
+        role: 'Proteolytic partner that liberates peptides and amino acids; deepens acidity and yogurt aroma.',
+      },
+    ],
+    stages: [
+      {
+        title: 'Milk preparation',
+        body: 'Milk is typically heated (often near pasteurization or higher) to denature whey proteins, improve body, and reduce competing microbes before inoculation.',
+      },
+      {
+        title: 'Inoculation and incubation',
+        body: 'A defined starter of S. thermophilus and L. delbrueckii subsp. bulgaricus is added and held near 40–45 °C. The pair grows faster together than either alone—a classic food fermentation mutualism.',
+      },
+      {
+        title: 'Set and cool',
+        body: 'When target acidity is reached, cooling slows the culture and sets the gel. Further acidification in the fridge is limited but continues slowly.',
+      },
+    ],
+    takeaways: [
+      'Yogurt law and Codex definitions center on these two thermophilic species working together.',
+      'Heat-treated milk and a warm incubation window favor the starter over ambient contaminants.',
+      'Unlike kraut, yogurt is usually a controlled inoculation, not a spontaneous succession.',
+    ],
+    citations: [
+      {
+        text: 'Courtin P, Rul F. Interactions between microorganisms in a simple ecosystem: yogurt bacteria as a study model. Lait. 2004;84(1–2):125–134.',
+        url: 'https://doi.org/10.1051/lait:2003031',
+      },
+      {
+        text: 'Sieuwerts S, de Bok FAM, Hugenholtz J, van Hylckama Vlieg JET. Unraveling microbial interactions in food fermentations: from classical to genomics approaches. Appl Environ Microbiol. 2008;74(16):4997–5007.',
+        url: 'https://doi.org/10.1128/AEM.00113-08',
+      },
+      {
+        text: 'Tamime AY, Robinson RK. Tamime and Robinson\'s Yoghurt: Science and Technology. 3rd ed. Woodhead / CRC; 2007. (Standard reference on yogurt starters and processing.)',
+        url: 'https://www.sciencedirect.com/book/9781845692131/tamime-and-robinsons-yoghurt',
+      },
+    ],
+  },
+
+  coffee: {
+    id: 'coffee',
+    label: 'Coffee',
+    tagline: 'Wet-process mucilage fermentation',
+    organisms: [
+      {
+        name: 'Yeasts (e.g. Saccharomyces, Pichia, Candida spp.)',
+        role: 'Consume pulp sugars; influence aroma precursors and help loosen mucilage during wet processing.',
+      },
+      {
+        name: 'Lactic acid bacteria',
+        role: 'Acidify the mass, compete with spoilage organisms, and modulate organic-acid profiles in the ferment tank.',
+      },
+      {
+        name: 'Enterobacteria / other epiphytes (early)',
+        role: 'Often present on cherries; usually decline as acidity rises if the ferment is managed well.',
+      },
+    ],
+    stages: [
+      {
+        title: 'Depulping',
+        body: 'In wet processing, fruit pulp is removed mechanically, leaving sticky mucilage on the parchment beans. That mucilage must be degraded before washing and drying.',
+      },
+      {
+        title: 'Fermentation tank',
+        body: 'Beans rest in water or as a dry mass while yeasts and LAB metabolize mucilage polysaccharides and sugars. Duration and temperature strongly affect cup cleanliness and acidity.',
+      },
+      {
+        title: 'Wash and dry',
+        body: 'When mucilage slips free, beans are washed and dried to stable moisture. Overfermentation can produce vinegar or rotten notes; underfermentation leaves sticky parchment and uneven drying.',
+      },
+    ],
+    takeaways: [
+      'Coffee fermentation is primarily a processing step to remove mucilage—and a lever for flavor—not a finished cultured food like yogurt.',
+      'Yeast and LAB consortia dominate well-managed wet ferments; uncontrolled growth invites defects.',
+      'Process design (wet vs. semi-dry, time, temperature, water changes) steers which microbes matter most.',
+    ],
+    citations: [
+      {
+        text: 'Haile M, Kang WH. The role of microbes in coffee fermentation and their impact on coffee quality. J Food Qual. 2019;2019:4836709.',
+        url: 'https://doi.org/10.1155/2019/4836709',
+      },
+      {
+        text: 'Elhalis H, Cox J, Zhao J. Coffee fermentation: Expedition from traditional to controlled process and perspectives for industrialization. Appl Food Res. 2023;3(1):100253.',
+        url: 'https://doi.org/10.1016/j.afres.2022.100253',
+      },
+      {
+        text: 'de Melo Pereira GV, et al. Conducting starter culture-controlled fermentations of coffee beans during on-farm wet processing: growth, metabolic activities and influence on bean quality. Food Res Int. 2015;75:348–356.',
+        url: 'https://doi.org/10.1016/j.foodres.2015.06.027',
+      },
+    ],
+  },
+};
