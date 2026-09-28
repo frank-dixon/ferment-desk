@@ -5,12 +5,13 @@
 @layer base {
   html {
     @apply scroll-smooth antialiased;
+    color-scheme: light;
   }
   body {
     @apply m-0 min-h-screen bg-void text-ink font-sans text-[15px] leading-relaxed;
   }
   ::selection {
-    @apply bg-sea/30 text-ink;
+    @apply bg-sea/25 text-ink;
   }
 }
 
@@ -19,10 +20,10 @@
     @apply rounded-desk border border-rule bg-void-card shadow-card;
   }
   .chip {
-    @apply inline-flex items-center rounded-full border border-rule px-3 py-1 text-xs font-medium tracking-wide transition;
+    @apply inline-flex items-center rounded-full border border-rule bg-void-card/70 px-3 py-1 text-xs font-medium tracking-wide transition;
   }
   .chip-active {
-    @apply border-sea/40 bg-sea-mist text-sea-soft;
+    @apply border-sea/35 bg-sea-mist text-sea-soft;
   }
   .chip-idle {
     @apply text-ink-muted hover:border-rule hover:bg-void-elev hover:text-ink;

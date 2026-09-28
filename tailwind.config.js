@@ -1,35 +1,36 @@
 /** @type {import('tailwindcss').Config} */
+/** Ferment Desk — cream/paper light shell; void* remapped so class names keep working */
 module.exports = {
   content: ['./docs/**/*.{html,js}', './src/js/**/*.js'],
   theme: {
     extend: {
       colors: {
         void: {
-          DEFAULT: '#0A0C10',
-          soft: '#12151C',
-          card: '#161A22',
-          elev: '#1C212B',
+          DEFAULT: '#F3EEE4',
+          soft: '#EDE6DA',
+          card: '#FAF7F2',
+          elev: '#E8E0D4',
         },
         sea: {
-          DEFAULT: '#5FA8A0',
-          soft: '#7BC0B8',
-          dim: '#3D7A74',
-          mist: 'rgba(95, 168, 160, 0.12)',
+          DEFAULT: '#0B8A8F',
+          soft: '#087277',
+          dim: '#065F63',
+          mist: 'rgba(11, 138, 143, 0.12)',
         },
         action: {
-          DEFAULT: '#6B7FD7',
-          soft: '#8A9AE3',
-          dim: '#4A5BB8',
-          mist: 'rgba(107, 127, 215, 0.14)',
+          DEFAULT: '#4F63C7',
+          soft: '#3D4FA8',
+          dim: '#35448F',
+          mist: 'rgba(79, 99, 199, 0.12)',
         },
         ink: {
-          DEFAULT: '#E8EAED',
-          muted: '#9AA0A8',
-          faint: '#6B7280',
+          DEFAULT: '#1C1916',
+          muted: '#5C564E',
+          faint: '#8A847A',
         },
         rule: {
-          DEFAULT: '#2A303C',
-          soft: '#232833',
+          DEFAULT: '#D6CDBE',
+          soft: '#E4DDD0',
         },
       },
       fontFamily: {
@@ -46,8 +47,8 @@ module.exports = {
         ],
       },
       boxShadow: {
-        card: '0 16px 48px rgba(0, 0, 0, 0.35)',
-        glow: '0 0 32px rgba(95, 168, 160, 0.15)',
+        card: '0 1px 2px rgba(28, 25, 22, 0.05), 0 8px 24px rgba(28, 25, 22, 0.06)',
+        glow: '0 0 28px rgba(11, 138, 143, 0.10)',
       },
       borderRadius: {
         desk: '0.875rem',
